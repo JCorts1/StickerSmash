@@ -1,9 +1,11 @@
+import { Link } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home screen</Text>
+      <Link href="/about" style={styles.button}>About</Link>
     </View>
   );
 }
@@ -17,5 +19,11 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#fff',
+  },
+  button: {
+    backgroundColor: "#fff",
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 10,
   },
 });
